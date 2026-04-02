@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="py-[70px] px-[60px] pb-10 bg-[#0a0a0a] border-t border-[rgba(184,150,90,0.12)] max-[900px]:py-[50px] max-[900px]:px-6 max-[900px]:pb-[30px]">
       <div className="grid grid-cols-[2fr_1fr_1fr_1fr_1.5fr] max-[900px]:grid-cols-2 max-[600px]:grid-cols-1 gap-[50px] max-[900px]:gap-[30px] mb-[60px]">
         <div className="max-[900px]:col-span-2 max-[600px]:col-span-1">
-          <Link href="/" className="block mb-[18px] font-[family-name:var(--font-display)] font-semibold text-[28px] tracking-[0.1em] uppercase text-[#EDEDED] no-underline">Modesty</Link>
+          <Link href="/" className="block mb-[18px] font-[family-name:var(--cormorant-font)] font-light italic text-[36px] tracking-[0.08em] text-[#EDEDED] no-underline">Abayas</Link>
           <p className="text-[12px] leading-[1.8] text-[rgba(237,237,237,0.7)] max-w-[240px] mb-6">
             Grace in every fold, empowerment in every choice. Premium modest fashion for the modern woman.
           </p>
@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-[rgba(255,255,255,0.06)] pt-[30px] flex justify-between items-center">
-        <p className="text-[11px] text-[rgba(245,240,235,0.3)] tracking-[0.05em]">© Modesty 2025. All rights reserved.</p>
+        <p className="text-[11px] text-[rgba(245,240,235,0.3)] tracking-[0.05em]">© Abayas 2025. All rights reserved.</p>
         <div>
           {['Privacy Policy', 'Terms of Use', 'Cookies'].map(l => (
             <a key={l} href="#" className="text-[11px] text-[rgba(245,240,235,0.3)] no-underline ml-6 tracking-[0.05em] transition-colors duration-300 hover:text-[#C6A96B]">{l}</a>

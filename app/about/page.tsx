@@ -5,8 +5,8 @@ import RevealWrapper from '@/components/RevealWrapper/RevealWrapper'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About — Modesty',
-  description: 'The story behind Modesty — luxury modest fashion crafted with devotion.',
+  title: 'About — Abayas',
+  description: 'The story behind Abayas — luxury modest fashion crafted with devotion.',,
 }
 
 const values = [
@@ -29,7 +29,7 @@ export default function AboutPage() {
       <main>
         <PageHero
           label="Our Story"
-          title="About Modesty"
+          title="About Abayas"
           subtitle="Where tradition meets contemporary luxury"
           image="/heritage-image.png"
         />
@@ -43,7 +43,7 @@ export default function AboutPage() {
                 The Art of Modest Fashion
               </h2>
               <p className="text-[13px] leading-[1.9] text-[rgba(237,237,237,0.7)] mb-6">
-                Modesty was born from a simple belief: that dressing modestly should never mean compromising on beauty, quality, or self-expression. Founded in Lahore, we draw from centuries of South Asian textile heritage to create garments that feel as meaningful as they look.
+                Abayas was born from a simple belief: that dressing modestly should never mean compromising on beauty, quality, or self-expression. Founded in Lahore, we draw from centuries of South Asian textile heritage to create garments that feel as meaningful as they look.
               </p>
               <p className="text-[13px] leading-[1.9] text-[rgba(237,237,237,0.7)]">
                 Every piece is designed in-house, crafted by skilled artisans, and finished with the kind of care that only comes from genuine devotion to the craft. We don't follow trends — we set a standard.
@@ -87,7 +87,7 @@ export default function AboutPage() {
                   Made With Devotion
                 </h2>
                 <p className="text-[13px] leading-[1.9] text-[rgba(237,237,237,0.7)] mb-5">
-                  From the first sketch to the final stitch, every Modesty garment passes through the hands of artisans who have spent their lives mastering their craft. We use only the finest fabrics — Irani silk, Kashmiri cashmere, hand-woven cotton — sourced from trusted suppliers who share our values.
+                  From the first sketch to the final stitch, every Abayas garment passes through the hands of artisans who have spent their lives mastering their craft. We use only the finest fabrics — Irani silk, Kashmiri cashmere, hand-woven cotton — sourced from trusted suppliers who share our values.
                 </p>
                 <p className="text-[13px] leading-[1.9] text-[rgba(237,237,237,0.7)]">
                   Our production is intentionally small-batch. We believe in making fewer things, better — garments that last a lifetime and carry meaning beyond fashion.

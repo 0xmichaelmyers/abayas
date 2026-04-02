@@ -7,7 +7,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Collections — Modesty',
+  title: 'Collections — Abayas',
   description: 'Explore our full range of luxury modest fashion collections.',
 }
 
