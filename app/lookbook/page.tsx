@@ -5,7 +5,7 @@ import RevealWrapper from '@/components/RevealWrapper/RevealWrapper'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Lookbook — Modesty',
+  title: 'Lookbook — Abayas',
   description: 'Explore our editorial lookbook and seasonal campaigns.',
 }
 

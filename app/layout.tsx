@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Playfair_Display, Inter, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -17,8 +17,16 @@ const inter = Inter({
   display: 'swap',
 })
 
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--cormorant-font',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Modesty — Redefining Modest Luxury',
+  title: 'Abayas — Redefining Modest Luxury',
   description:
     'Premium modest fashion — luxury abayas, hijabs, chadars, and evening wear crafted with devotion.',
 }
@@ -31,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable}`}
+      className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
     >
       <body>{children}</body>
     </html>

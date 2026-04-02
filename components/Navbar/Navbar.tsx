@@ -32,8 +32,8 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-12 py-[22px] transition-all duration-300 max-[900px]:px-6 max-[900px]:py-[18px] ${navBg}`}>
 
-      <Link href="/" className="font-[family-name:var(--font-display)] font-semibold text-[28px] tracking-[0.1em] uppercase text-[#EDEDED] no-underline">
-        Modesty
+      <Link href="/" className="font-[family-name:var(--cormorant-font)] font-light italic text-[36px] tracking-[0.08em] text-[#EDEDED] no-underline">
+        Abayas
       </Link>
 
       <ul className="flex gap-9 list-none max-[900px]:hidden">
