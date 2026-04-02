@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About — Abayas',
-  description: 'The story behind Abayas — luxury modest fashion crafted with devotion.',,
+  description: 'The story behind Abayas — luxury modest fashion crafted with devotion.',
 }
 
 const values = [
