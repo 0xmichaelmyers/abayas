@@ -79,14 +79,14 @@ export default function Collections() {
                   src={col.src}
                   alt={col.alt}
                   fill
-                  className="object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 opacity-75 group-hover:opacity-100"
+                  className="border-none bg-transparent outline-none focus:outline-none object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 opacity-75 group-hover:opacity-100"
                   sizes="(max-width: 600px) 300px, 380px"
                   priority={index < 3}
                 />
                 
                 {/* Overlays */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-90 transition-opacity duration-700 group-hover:opacity-100" />
-                <div className="absolute inset-5 border border-white/0 group-hover:border-[#C6A96B]/30 transition-colors duration-700 z-10 pointer-events-none" />
+                <div className="absolute inset-5 border border-transparent group-hover:border-[#C6A96B]/30 transition-colors duration-700 z-10 pointer-events-none" />
 
                 {/* Content */}
                 <div className="absolute bottom-8 left-8 right-8 z-20">

@@ -72,7 +72,7 @@ export default function CollectionsPage() {
                     src={col.src}
                     alt={col.alt}
                     fill
-                    className="object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 opacity-75 group-hover:opacity-100"
+                    className="border-none bg-transparent outline-none focus:outline-none object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 opacity-75 group-hover:opacity-100"
                     sizes={isLarge ? "(max-width: 900px) 100vw, 50vw" : "(max-width: 900px) 100vw, 25vw"}
                     priority={index < 2}
                   />
@@ -80,7 +80,7 @@ export default function CollectionsPage() {
                   <div className={`absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[rgba(10,10,10,0.4)] to-transparent transition-opacity duration-700 ${isLarge ? 'opacity-90' : 'opacity-[0.85]'}`} />
                   <div className="absolute inset-0 bg-gradient-to-b from-[rgba(10,10,10,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   
-                  <div className="absolute inset-5 border border-white/0 group-hover:border-[#C6A96B]/30 transition-colors duration-700 z-10 pointer-events-none" />
+                  <div className="absolute inset-5 border border-transparent group-hover:border-[#C6A96B]/30 transition-colors duration-700 z-10 pointer-events-none" />
 
                   <div className="absolute bottom-0 left-0 right-0 p-8 z-20 flex flex-col justify-end h-full">
                     <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-[0.6s] ease-out">
