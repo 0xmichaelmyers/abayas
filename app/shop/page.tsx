@@ -3,22 +3,13 @@ import Footer from '@/components/Footer/Footer'
 import PageHero from '@/components/PageHero/PageHero'
 import RevealWrapper from '@/components/RevealWrapper/RevealWrapper'
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { products } from '@/data/products'
 
 export const metadata: Metadata = {
   title: 'Shop — Abayas',
   description: 'Shop our full range of luxury modest fashion.',
 }
-
-const products = [
-  { name: 'Irani Silk Chador', price: '2,500', img: '/Product-1.png', tag: 'New' },
-  { name: 'Premium Silk Hijab', price: '1,800', img: '/Product-2.png', tag: null },
-  { name: 'Bridal Ehram', price: '3,200', img: '/Product-3.png', tag: 'Bestseller' },
-  { name: 'Designer Abaya', price: '4,500', img: '/Product-4.png', tag: null },
-  { name: 'Embroidered Chador', price: '2,900', img: '/Product-1.png', tag: 'New' },
-  { name: 'Cashmere Hijab', price: '2,100', img: '/Product-2.png', tag: null },
-  { name: 'Evening Abaya', price: '5,200', img: '/Product-3.png', tag: null },
-  { name: 'Silk Dupatta', price: '1,400', img: '/Product-4.png', tag: 'New' },
-]
 
 const filters = ['All', 'Abayas', 'Hijabs', 'Chadars', 'Evening Wear', 'Bridal', 'New Arrivals']
 
@@ -68,7 +59,7 @@ export default function ShopPage() {
           </div>
           <RevealWrapper className="grid grid-cols-4 max-[900px]:grid-cols-2 max-[500px]:grid-cols-1 gap-[3px] max-w-[1200px] mx-auto">
             {products.map((p) => (
-              <div key={p.name} className="group relative cursor-pointer bg-[#1a1a1a]">
+              <Link href={`/product/${p.slug}`} key={p.name} className="group relative cursor-pointer bg-[#1a1a1a] block no-underline">
                 <div className="relative overflow-hidden aspect-[3/4]">
                   <img
                     src={p.img}
@@ -81,7 +72,7 @@ export default function ShopPage() {
                     </span>
                   )}
                   <div className="absolute bottom-0 left-0 right-0 bg-[rgba(184,150,90,0.92)] text-[#0a0a0a] text-[9px] font-semibold tracking-[0.3em] uppercase py-[13px] text-center opacity-0 translate-y-full transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                    Add to Cart
+                    View Product
                   </div>
                 </div>
                 <div className="p-[18px_14px]">
@@ -91,7 +82,7 @@ export default function ShopPage() {
                     {p.price}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </RevealWrapper>
 
