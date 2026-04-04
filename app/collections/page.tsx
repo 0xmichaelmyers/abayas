@@ -79,7 +79,7 @@ export default function CollectionsPage() {
 
                   <div className={`absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[rgba(10,10,10,0.4)] to-transparent transition-opacity duration-700 ${isLarge ? 'opacity-90' : 'opacity-[0.85]'}`} />
                   <div className="absolute inset-0 bg-gradient-to-b from-[rgba(10,10,10,0.6)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                  
+
                   <div className="absolute inset-5 border border-transparent group-hover:border-[#C6A96B]/30 transition-colors duration-700 z-10 pointer-events-none" />
 
                   <div className="absolute bottom-0 left-0 right-0 p-8 z-20 flex flex-col justify-end h-full">
@@ -92,7 +92,7 @@ export default function CollectionsPage() {
                           {col.description}
                         </p>
                       </div>
-                      
+
                       <div className="flex items-center gap-4 overflow-hidden">
                         <span className="text-[10px] tracking-[0.3em] uppercase text-[#EDEDED] group-hover:text-white transition-colors duration-300">
                           Shop Collection

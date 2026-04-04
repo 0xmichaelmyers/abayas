@@ -5,21 +5,24 @@ import BrandStory from '@/components/BrandStory/BrandStory'
 import FeaturedProducts from '@/components/FeaturedProducts/FeaturedProducts'
 import Lookbook from '@/components/Lookbook/Lookbook'
 import Testimonials from '@/components/Testimonials/Testimonials'
-import InstagramFeed from '@/components/InstagramFeed/InstagramFeed'
+import HomeFAQs from '@/components/HomeFAQs/HomeFAQs'
 import Footer from '@/components/Footer/Footer'
+
+import HouseCodes from '@/components/HouseCodes/HouseCodes'
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="relative z-10 bg-[#0a0a0a]">
         <Hero />
         <Collections />
-        <BrandStory />
+        <HouseCodes />
         <FeaturedProducts />
+        <BrandStory />
         <Lookbook />
         <Testimonials />
-        <InstagramFeed />
+        <HomeFAQs />
       </main>
       <Footer />
     </>
