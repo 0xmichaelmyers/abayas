@@ -5,7 +5,7 @@ export default function BrandStory() {
     <section className="py-[120px] px-[60px] bg-[#0a0a0a] max-[900px]:py-[80px] max-[900px]:px-6" id="story">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex gap-[100px] items-center max-[900px]:flex-col max-[900px]:gap-[60px]">
-          
+
           {/* Left Side: Text */}
           <div className="flex-1">
             <div className="flex flex-col gap-3 mb-8">
@@ -28,7 +28,7 @@ export default function BrandStory() {
             <Link href="/about" className="group flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase text-[#C6A96B] no-underline pb-[4px] w-fit">
               <span className="border-b border-transparent group-hover:border-[#C6A96B] transition-colors duration-300">Discover The Craft</span>
               <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform group-hover:translate-x-1 transition-transform duration-300">
-                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="#C6A96B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="#C6A96B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
           </div>
@@ -42,14 +42,14 @@ export default function BrandStory() {
                 className="w-full h-full object-cover opacity-90 transition-all duration-[1.5s] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60"></div>
-              
+
               {/* Identical inner frame effect used across the site */}
               <div className="absolute inset-4 border border-[rgba(198,169,107,0)] transition-all duration-500 group-hover:border-[rgba(198,169,107,0.3)] pointer-events-none"></div>
             </div>
           </div>
 
         </div>
-        
+
         {/* Original signature line element */}
         <div className="flex justify-end mt-[60px] max-[1024px]:mt-[40px]">
           <div

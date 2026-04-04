@@ -31,11 +31,10 @@ export default function ShopPage() {
               {filters.map((f, i) => (
                 <button
                   key={f}
-                  className={`text-[9px] tracking-[0.3em] uppercase whitespace-nowrap pb-1 border-b transition-colors duration-300 cursor-pointer bg-transparent ${
-                    i === 0
+                  className={`text-[9px] tracking-[0.3em] uppercase whitespace-nowrap pb-1 border-b transition-colors duration-300 cursor-pointer bg-transparent ${i === 0
                       ? 'text-[#C6A96B] border-[#C6A96B]'
                       : 'text-[rgba(237,237,237,0.5)] border-transparent hover:text-[#EDEDED]'
-                  }`}
+                    }`}
                 >
                   {f}
                 </button>

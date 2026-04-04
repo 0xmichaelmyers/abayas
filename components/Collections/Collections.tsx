@@ -5,14 +5,14 @@ import Link from 'next/link'
 import { useRef } from 'react'
 
 const collections = [
-  { id: 1, src: '/Signature-Abayas-collection-image.png', alt: 'Signature Abayas', title: 'Signature Series', description: 'Crafted to define you' },
-  { id: 2, src: '/Occasion-Abayas-collection-image.png', alt: 'Occasion Abayas', title: 'Occasion', description: 'Dressed for every moment' },
-  { id: 3, src: '/Embellished-Abayas-collection-image.png', alt: 'Embellished Abayas', title: 'Embellished', description: 'Intricate detail, pure luxury' },
-  { id: 4, src: '/Pleated-Abayas-collection-image.png', alt: 'Pleated Abayas', title: 'Pleated', description: 'Fluid grace in every fold' },
-  { id: 5, src: '/Minimal-Abayas-collection-image.png', alt: 'Minimal Abayas', title: 'Minimalist', description: 'Understated, effortless elegance' },
-  { id: 6, src: '/Statement-Black-collection-image.png', alt: 'Statement Black Abayas', title: 'Statement Black', description: 'Bold. Timeless. Unapologetic.' },
-  { id: 7, src: '/Limited-Edition-collection-image.png', alt: 'Limited Edition Abayas', title: 'Limited Edition', description: 'Exclusive pieces, rare beauty' },
-  { id: 8, src: '/Evening-Abayas-collection-images.png', alt: 'Evening Abayas', title: 'Evening', description: 'For your most luminous nights' },
+  { id: 1, src: '/Signature-Abayas-collection-image.png', alt: 'Signature Abayas', title: 'Signature Series', description: 'Crafted to define you', slug: 'signature' },
+  { id: 2, src: '/Occasion-Abayas-collection-image.png', alt: 'Occasion Abayas', title: 'Occasion', description: 'Dressed for every moment', slug: 'occasion' },
+  { id: 3, src: '/Embellished-Abayas-collection-image.png', alt: 'Embellished Abayas', title: 'Embellished', description: 'Intricate detail, pure luxury', slug: 'embellished' },
+  { id: 4, src: '/Pleated-Abayas-collection-image.png', alt: 'Pleated Abayas', title: 'Pleated', description: 'Fluid grace in every fold', slug: 'pleated' },
+  { id: 5, src: '/Minimal-Abayas-collection-image.png', alt: 'Minimal Abayas', title: 'Minimalist', description: 'Understated, effortless elegance', slug: 'minimalist' },
+  { id: 6, src: '/Statement-Black-collection-image.png', alt: 'Statement Black Abayas', title: 'Statement Black', description: 'Bold. Timeless. Unapologetic.', slug: 'statement-black' },
+  { id: 7, src: '/Limited-Edition-collection-image.png', alt: 'Limited Edition Abayas', title: 'Limited Edition', description: 'Exclusive pieces, rare beauty', slug: 'limited-edition' },
+  { id: 8, src: '/Evening-Abayas-collection-images.png', alt: 'Evening Abayas', title: 'Evening', description: 'For your most luminous nights', slug: 'evening' },
 ]
 
 export default function Collections() {
@@ -71,7 +71,7 @@ export default function Collections() {
         >
            {collections.map((col, index) => (
              <Link
-               href="/collections"
+               href={`/collections/${col.slug}`}
                key={col.id}
                className="group relative flex-none w-[380px] max-[600px]:w-[300px] h-[520px] max-[600px]:h-[420px] snap-center overflow-hidden bg-[#111]"
              >
