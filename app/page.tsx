@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="relative z-10 bg-[#0a0a0a]">
+      <main className="relative z-10 bg-[#0a0a0a] isolate">
         <Hero />
         <Collections />
         <HouseCodes />
@@ -24,7 +24,9 @@ export default function Home() {
         <Testimonials />
         <HomeFAQs />
       </main>
-      <Footer />
+      <div className="sticky bottom-0 -z-10">
+        <Footer />
+      </div>
     </>
   )
 }
